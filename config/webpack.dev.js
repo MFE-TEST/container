@@ -19,7 +19,7 @@ const devConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                dashboard: 'dashboard@https://mfe-test.github.io/remote-react/remoteEntry.js'
+                dashboard: 'dashboard@http://localhost:8081/remoteEntry.js'
             },
             // shared: {
             //     react: {

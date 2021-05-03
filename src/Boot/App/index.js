@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDashboard from '../../Remotes/ReactDashboard';
+import { BrowserRouter } from 'react-router-dom';
+import Router from '../Router';
+import Header from '../../Components/Header';
 
 function App() {
-  return <div>
+  return <BrowserRouter>
     <h1>
       My Container App
     </h1>
-    <div>
-      <ReactDashboard />
-    </div>
-  </div>;
+    <Header />
+    <Router />
+  </BrowserRouter>;
 }
 
 export default App;
