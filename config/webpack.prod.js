@@ -5,6 +5,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const commonConfig = require('./webpack.common');
 
 const DASHBOARD_URL = process.env.DASHBOARD_URL || 'https://mfe-test.github.io/remote-react';
+const VUE3_URL = process.env.DASHBOARD_URL || 'https://mfe-test.github.io/remote-vue3/';
 
 const DOMAIN = process.env.DOMAIN || 'https://mfe-test.github.io/container/';
 const prodConfig = {
@@ -20,6 +21,7 @@ const prodConfig = {
       name: 'container',
       remotes: {
         dashboard: `dashboard@${DASHBOARD_URL}/remoteEntry.js`,
+        vue3: `vue3@${VUE3_URL}/remoteEntry.js`,
       },
       // shared: {
       //     react: {

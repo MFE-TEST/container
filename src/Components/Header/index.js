@@ -16,6 +16,11 @@ function Header() {
             Test
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/vue3">
+            Vue3
+          </NavLink>
+        </li>
       </ul>
     </header>
   )
