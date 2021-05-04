@@ -7,22 +7,7 @@ function ReactDashboard() {
   const history = useHistory();
 
   useEffect(() => {
-    const onNavigate = (fullPath) => {
-      if (fullPath !== (history.location.pathname + history.location.search)) {
-        history.push(fullPath);
-      }
-    }
-
-    const initialPath = history.location.pathname + history.location.search;
-    const { onParentNavigate } = mount(ref.current, { onNavigate, initialPath } );
-
-    const unlisten = history.listen(location => {
-      onParentNavigate(history.location.pathname + history.location.search);
-    })
-
-    return () => {
-      unlisten();
-    }
+    mount(ref.current, { history } );
   }, []);
 
   return <div ref={ref} />

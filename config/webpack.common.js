@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
@@ -83,5 +84,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
+    new webpack.DefinePlugin({
+      'BASE_NAME': JSON.stringify(process.env.BASE_NAME || "/"),
+    })
   ],
 };

@@ -4,4 +4,4 @@ import App from './Boot/App';
 
 const element = document.getElementById('root');
 
-ReactDOM.render(<App />, element);
+ReactDOM.render(<App basename={BASE_NAME} />, element);

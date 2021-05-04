@@ -6,7 +6,7 @@ const commonConfig = require('./webpack.common');
 
 const DASHBOARD_URL = process.env.DASHBOARD_URL || 'https://mfe-test.github.io/remote-react';
 
-const DOMAIN = process.env.DOMAIN || 'https://mfe-test.github.io/containter/';
+const DOMAIN = process.env.DOMAIN || 'https://mfe-test.github.io/container/';
 const prodConfig = {
   mode: 'production',
   output: {
