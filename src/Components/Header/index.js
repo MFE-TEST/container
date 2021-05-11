@@ -21,6 +21,11 @@ function Header() {
             Vue3
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/vue2">
+            Vue2
+          </NavLink>
+        </li>
       </ul>
     </header>
   )

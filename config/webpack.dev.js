@@ -20,6 +20,7 @@ const devConfig = {
             remotes: {
                 dashboard: 'dashboard@http://localhost:8081/remoteEntry.js',
                 vue3: 'vue3@http://localhost:8082/remoteEntry.js',
+                vue2: 'vue2@http://localhost:8083/remoteEntry.js',
             },
         }),
     ],
