@@ -6,7 +6,7 @@ const commonConfig = require('./webpack.common');
 
 const DASHBOARD_URL = process.env.DASHBOARD_URL || 'https://mfe-test.github.io/remote-react';
 const VUE3_URL = process.env.DASHBOARD_URL || 'https://mfe-test.github.io/remote-vue3/';
-const VUE2_URL = process.env.VUE2_URL || 'https://mfe-test.github.io/remote-vue2/remoteEntry.js';
+const VUE2_URL = process.env.VUE2_URL || 'https://mfe-test.github.io/remote-vue2/';
 
 const DOMAIN = process.env.DOMAIN || 'https://mfe-test.github.io/container/';
 const prodConfig = {
