@@ -26,6 +26,11 @@ function Header() {
             Vue2
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/svelte">
+            Svelte
+          </NavLink>
+        </li>
       </ul>
     </header>
   )
